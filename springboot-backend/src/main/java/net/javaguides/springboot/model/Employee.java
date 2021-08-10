@@ -14,14 +14,14 @@ import lombok.Data;
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	public long id;
 	
 	@Column(name = "first_name", nullable = false)
-	private String firstName;
+	public String firstName;
 	
 	@Column(name = "last_name")
-	private String lastName;
+	public String lastName;
 	
 	@Column(name = "email")
-	private String email;
+	public String email;
 }
